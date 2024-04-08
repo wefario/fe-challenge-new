@@ -10,26 +10,26 @@ describe('companyTree', () => {
         companiesFromApi: MOCKED_COMPANIES,
       })
     ).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "children": Array [
-            Object {
-              "children": Array [
-                Object {
+      [
+        {
+          "children": [
+            {
+              "children": [
+                {
                   "department_id": "test-dep-1",
                   "email": "j@google.com",
                   "id": "1",
                   "name": "John Smith",
                   "title": "TEST TITLE",
                 },
-                Object {
+                {
                   "department_id": "test-dep-1",
                   "email": "j@google.com",
                   "id": "2",
                   "name": "John Wane",
                   "title": "TEST TITLE",
                 },
-                Object {
+                {
                   "department_id": "test-dep-1",
                   "email": "j@google.com",
                   "id": "3",
@@ -45,18 +45,18 @@ describe('companyTree', () => {
           "id": "test-company-1",
           "name": "TEST COMPANY 1",
         },
-        Object {
-          "children": Array [
-            Object {
-              "children": Array [
-                Object {
+        {
+          "children": [
+            {
+              "children": [
+                {
                   "department_id": "test-dep-2",
                   "email": "j@google.com",
                   "id": "4",
                   "name": "Matt Wolf",
                   "title": "TEST TITLE",
                 },
-                Object {
+                {
                   "department_id": "test-dep-2",
                   "email": "j@google.com",
                   "id": "5",
@@ -84,14 +84,14 @@ describe('companyTree', () => {
         companiesFromApi: MOCKED_COMPANIES,
       })
     ).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "children": Array [],
+      [
+        {
+          "children": [],
           "id": "test-company-1",
           "name": "TEST COMPANY 1",
         },
-        Object {
-          "children": Array [],
+        {
+          "children": [],
           "id": "test-company-2",
           "name": "TEST COMPANY 2",
         },
