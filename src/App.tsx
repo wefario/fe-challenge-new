@@ -1,7 +1,8 @@
+import { Typography } from 'antd'
 import './App.css'
 
 const App = () => {
-  return <h1>Hello World</h1>
+  return <Typography.Title>Hello World</Typography.Title>
 }
 
 export default App
