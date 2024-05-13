@@ -13,6 +13,7 @@ export default defineConfig({
   base: '/',
   envPrefix: 'REACT_APP',
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
+  server: { proxy: { '/api': 'https://664203cd3d66a67b3435d0da.mockapi.io' } },
   test: {
     globals: true,
     testTimeout: 10000,
