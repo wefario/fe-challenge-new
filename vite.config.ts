@@ -13,7 +13,16 @@ export default defineConfig({
   base: '/',
   envPrefix: 'REACT_APP',
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
-  server: { proxy: { '/api': 'https://664203cd3d66a67b3435d0da.mockapi.io' } },
+  server: {
+    proxy: {
+      '/api/v1': {
+        target:
+          'https://api.mockfly.dev/mocks/c9842c6c-cf70-4df4-b471-b645ea9048c1',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/v1/, ''),
+      },
+    },
+  },
   test: {
     globals: true,
     testTimeout: 10000,
